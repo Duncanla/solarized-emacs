@@ -445,7 +445,7 @@ customize the resulting theme."
      `(font-lock-comment-delimiter-face
        ((,class (:foreground ,base01 :slant ,s-maybe-italic))))
      `(font-lock-comment-face ((,class (:foreground ,base01))))
-     `(font-lock-constant-face ((,class (:foreground ,blue :weight bold))))
+     `(font-lock-constant-face ((,class (:foreground ,blue :weight ,s-maybe-bold))))
      `(font-lock-doc-face ((,class (:foreground ,(if solarized-distinct-doc-face violet cyan)
                                                 :slant ,s-maybe-italic))))
      `(font-lock-function-name-face ((,class (:foreground ,blue))))
@@ -487,7 +487,8 @@ customize the resulting theme."
                                                        :height ,solarized-height-plus-1))))
      `(font-latex-sectioning-5-face ((,class (:inherit ,s-variable-pitch :foreground ,yellow
                                                        :weight bold))))
-     `(font-latex-sedate-face ((,class (:foreground ,base1))))
+     ;; `(font-latex-sedate-face ((,class (:foreground ,base1))))
+     `(font-latex-sedate-face ((,class (:foreground ,green))))
      `(font-latex-slide-title-face ((,class (:inherit (,s-variable-pitch font-lock-type-face)
                                                       :weight bold :height ,solarized-height-plus-3))))
      `(font-latex-string-face ((,class (:foreground ,cyan))))
