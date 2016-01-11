@@ -1015,7 +1015,7 @@ customize the resulting theme."
      `(helm-buffer-saved-out ((,class (:foreground ,red :background ,base03
                                                    :inverse-video t))))
      `(helm-buffer-size ((,class (:foreground ,base01))))
-     `(helm-candidate-number ((,class (:background ,base02 :foreground ,base1
+     `(helm-candidate-number ((,class (:background ,base03 :foreground ,base01
                                                    :bold t))))
      `(helm-ff-directory ((,class (:background ,base03  :foreground ,blue))))
      `(helm-ff-executable ((,class (:foreground ,green))))
@@ -1024,6 +1024,9 @@ customize the resulting theme."
                                                      :slant italic))))
      `(helm-ff-prefix ((,class (:background ,yellow :foreground ,base03))))
      `(helm-ff-symlink ((,class (:foreground ,cyan))))
+     `(helm-ff-dotted-directory ((,class (:background ,base03 :foreground ,base01))))
+     `(helm-ff-dotted-symlink-directory ((,class (:background ,base03 :foreground ,base01))))
+     `(helm-buffer-directory ((,class (:background ,base03 :foreground ,blue))))
      `(helm-grep-file ((,class (:foreground ,cyan :underline t))))
      `(helm-grep-finish ((,class (:foreground ,green))))
      `(helm-grep-lineno ((,class (:foreground ,orange))))
@@ -1036,12 +1039,15 @@ customize the resulting theme."
                                                        :bold t))))
      `(helm-M-x-key ((,class (:foreground ,orange :underline t))))
      `(helm-moccur-buffer ((,class (:foreground ,cyan :underline t))))
-     `(helm-match ((,class (:inherit match))))
-     `(helm-selection ((,class (:background ,base02 :underline t))))
+     ;; `(helm-match ((,class (:inherit match))))
+     `(helm-match ((,class (:foreground ,blue :underline t))))
+     `(helm-selection ((,class (:background ,base02 :underline nil :weight bold))))
      `(helm-selection-line ((,class (:background ,base02 :foreground ,base1
                                                  :underline nil))))
      `(helm-separator ((,class (:foreground ,red))))
-     `(helm-source-header ((,class (:background ,blue-lc :foreground ,base03
+     ;; `(helm-source-header ((,class (:background ,blue-lc :foreground ,base03
+     ;;                                            :underline nil))))
+     `(helm-source-header ((,class (:background ,base03 :foreground ,yellow
                                                 :underline nil))))
      `(helm-time-zone-current ((,class (:foreground ,green))))
      `(helm-time-zone-home ((,class (:foreground ,red))))
